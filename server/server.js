@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 
+//conexion a base de datos
 require('./config/mongoose.config');
 //rutas//
 require('./routes/usuario.route')(app);

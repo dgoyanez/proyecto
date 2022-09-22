@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+
+.service {
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+height: 100vh;
+}
+
+.registro{
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+height: 75vh; 
+}
+
+.title1{
+  font-size:60px;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 70%);
+}
+.btn2{
+    -webkit-text-stroke: 2px rgb(243, 240, 236);
+    color: transparent;
+    font-size: 25px;
+  }
+
+  .btn1{
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+font-size: 25px;  
+}
+.subtitle{
+  color: black solid;
+  font-size: 30px;
+}

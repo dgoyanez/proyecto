@@ -6,7 +6,8 @@ const Registro = ()=>{
 
 const navigate = useNavigate();
 
-const volverHome =()=>{
+    const volverHome = () => {
+
     navigate(`/`);
 }
 
@@ -14,7 +15,7 @@ const volverHome =()=>{
     <div className='container d-grip gap-2 d-sm-flex justify-content-sm-center'>
         <div className='row'>
             <AgregarUsuario/>
-            <button type='button' class='btn btn-danger px-2 mt-4' onClick={volverHome}>volver home</button>
+            <button type='button' className='btn2 btn btn-dark px-2 mt-4' onClick={volverHome}>volver home</button>
         </div>
     </div>
 
