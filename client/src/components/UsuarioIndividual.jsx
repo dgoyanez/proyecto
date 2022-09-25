@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import {useNavigate} from 'react-router';
 
 
 function UsuarioIndividual({usuario}) {
@@ -10,6 +11,11 @@ function UsuarioIndividual({usuario}) {
 useEffect(()=>{
     AOS.init()
 },[])
+
+const navigate = useNavigate();
+const volverHome =()=>{
+    navigate(`/pago`);
+}
 
   return (
     <div className='container'>
@@ -28,7 +34,7 @@ useEffect(()=>{
                             <li className='list-group-item'>Comuna: {usuario.comuna}</li>
                         </ul>
                     </Card.Text>
-                    <Button variant="primary">Adquirir SERVICIO!</Button>
+                    <Button onClick={volverHome} variant="primary">Adquirir SERVICIO!</Button>
                 </Card.Body>
             </Card>
             </div>
