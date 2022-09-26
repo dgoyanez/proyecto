@@ -48,3 +48,15 @@ module.exports.editar = (req, res)=>{
   .then((usuario)=>res.json(usuario))
   .catch(err=>res.json(err))
 }
+
+module.exports.agregar = (req, res) =>{
+  const {tarjeta,card,expiration,name}=req.body
+  usuario.create({
+        tarjeta,
+        card,
+        expiration,
+        name,
+  })
+      .then((usuario) =>res.json(usuario))
+      .catch(err=>res.json(err))
+};
