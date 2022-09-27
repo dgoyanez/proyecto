@@ -5,5 +5,4 @@ module.exports = (app) =>{
     app.post('/api/v1/usuarios/', UsuarioController.crear);
     app.put('/api/v1/usuarios/:id', UsuarioController.editar);
     app.delete('/api/v1/usuarios/:id', UsuarioController.eliminar);
-    app.post('/api/v1/pagos/', UsuarioController.crear);
 }

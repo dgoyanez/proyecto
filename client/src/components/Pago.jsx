@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react'
 import {useNavigate} from 'react-router';
 
@@ -14,12 +15,19 @@ const [name, setName] = useState('');
 const [expiration, setExpiration] = useState('');
 
 const agregarPago = ()=>{
-    const usuarioPago ={
+    const pagousu ={
         tarjeta: tarjeta,
         card: card,
         name: name,
         expiration: expiration
     }
+
+console.log(pagousu)
+
+axios.post('http://localhost:8000/api/v1/pago', pagousu)
+.then(res =>{
+    alert(res.data)
+}).then(err =>{console.log(err)})
 }
 
 return (

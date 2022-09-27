@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: true}));
 require('./config/mongoose.config');
 //rutas//
 require('./routes/usuario.route')(app);
-// require('./routes/usuario.route')(app);
+require('./routes/pagoUsu.route')(app); //agrege nueva ruta para el PAGO
 
 
 app.listen(port, () => console.log('servidor arriba ' + port))
