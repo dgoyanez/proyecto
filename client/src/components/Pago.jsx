@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import {useNavigate} from 'react-router';
 
+// agrege la parte del pago desde ACA 
 const Pago = () => {
 
 const navigate = useNavigate();
@@ -29,6 +30,8 @@ axios.post('http://localhost:8000/api/v1/pago', pagousu)
     alert(res.data)
 }).then(err =>{console.log(err)})
 }
+
+// HASTA ACA SE AGREGO Y MODIFICO
 
 return (
     <div className='blockpago'>
