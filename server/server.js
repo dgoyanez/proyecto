@@ -12,6 +12,7 @@ app.use(express.urlencoded({extended: true}));
 require('./config/mongoose.config');
 //rutas//
 require('./routes/usuario.route')(app);
+// require('./routes/usuario.route')(app);
 
 
 app.listen(port, () => console.log('servidor arriba ' + port))
