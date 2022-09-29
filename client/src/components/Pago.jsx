@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import {useNavigate} from 'react-router';
+import Swal from 'sweetalert2';
 
 // agrege la parte del pago desde ACA 
 const Pago = () => {
@@ -27,7 +28,11 @@ console.log(pagousu)
 
 axios.post('http://localhost:8000/api/v1/pago', pagousu)
 .then(res =>{
-    alert(res.data)
+    Swal.fire({
+        title:'Compra realizada con exito!',
+        icon:'success'
+    }).then(()=>navigate('/'))
+      
 }).then(err =>{console.log(err)})
 }
 
